@@ -1,86 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-
-    <title>Jose Salazar</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
     <link rel="icon" href="computer.ico" type="image/gif" sizes="16x16" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Jose Salazar</title>
   </head>
   <body>
-    <div id="box1">
-      <p id="intro">
-        <span class="heading">Jose Salazar</span><br />Phoenix <br />
-        San Francisco bay area<br />
-      </p>
-    </div>
-    <div id="box2">
-      <span class="heading">About</span>
-      <div>
-        <div id="picbox">
-          <img src="jose_linkedin.jpg" alt="Jose" id="pic" />
-        </div>
-        <p>
-          Hello, visitor and welcome to my portfolio! This website serves as an example of my front-end skills and point of contact. This website was made with HTML, CSS and vanilla Javascript, but I am familiar with various libraries and frameworks. 
-        </p>
-        <p>
-          Currently, I am a Junior Computer Science student at the University of California, Santa Cruz and a Security Researcher at Synack. My interests include building applications and finding flaws (vulnerabilities) in systems and applications.
-        </p>
-        <p>
-          I am interested in a career in software engineering and cybersecurity.
-          I am always seeking opportunities to improve my skills in these fields.
-          For example, I completed an <a href="https://courses.codepath.org/snippets/android_university/syllabus_spring_2020" id="codepath">Android Development course offered by Codepath.org</a>, and have built several Android Mobile Applications.
-          More recently, I earned several GIAC certifications through the <a href="https://www.sans.org/cybertalent/cybersecurity-career/vetsuccess-academy" id="codepath">SANS VetSuccess Academy.</a>
-          Alongside schoolwork and bug hunting, I am sharpening my security skills via HackTheBox or TryHackMe, and I am currently building an ecommerce webiste based on React, CommercialJS, Stripe and Bootstrap.
-          Please feel free to <span id="contact">contact me</span> about any opportunities.
-        </p>
-        <div>
-          <span class="heading">Android Applications</span>
-          <div>
-            <embed type="text/html" src="walkthrough2_ParseInsta.gif" width="400" height="250">
-            <a href="https://github.com/solisjose46/ParseInstagram">Parse Instagram</a>
-          </div>
-          <div>
-            <embed type="text/html" src="SimpleTweet_walkthrough.gif" width="400" height="250">
-            <a href="https://github.com/solisjose46/SimpleTweet">Simple Tweet</a>
-          </div>
-          <div>
-            <embed type="text/html" src="flixster_2_walkthrough.gif" width="800" height="250">
-            <a href="https://github.com/solisjose46/Flixster">Flixster</a>
-          </div>
-        </div>
-        <div>
-          <span class="heading">Security Certifications</span>
-          <div>
-            <a href="https://www.credly.com/earner/earned/badge/38adaacb-d202-40ea-9e4d-940d93533f03"><img src="gsec.png" alt="gsec badge"></a>
-          </div>
-          <div>
-            <a href="https://www.credly.com/earner/earned/badge/3c0510c9-342d-4ac6-9b58-24e1d87a4aa5"><img src="gcih.png" alt="gcih badge"></a>
-          </div>
-          <div>
-            <a href="https://www.credly.com/earner/earned/badge/4d29654b-1eb7-4c3c-86ce-00872395d7c1"><img src="gwapt.png" alt="gwapt badge"></a>
-          </div>
+    <div class="container-fluid">
+      <!-------------Intro--------------->
+      <div class="row bg-secondary">
+        <div class="col">
+          <p><h1><strong>Jose Salazar</strong></h1><h3>Phoenix </br>San Francisco bay area</h3></p>
         </div>
       </div>
-    </div>
-    <div id="box3">
-      <div>
-        <span class="heading">Contact</span>
-        <p>Feel free to check out my GitHub and let's connect on LinkedIn!</p>
-      </div>
-      <div id="connect">
-        <div class="logobox">
-          <a href="https://www.linkedin.com/in/jose-solis-1a2643a5/"
-            ><img alt="linkedin logo" src="linkedin.png" class="logos"
-          /></a>
+      <!------------Intro---------------->
+      <!--------------Navbar-------------->
+      <div class="row bg-warning">
+        <div class="col">
+          <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="true">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-android-tab" data-toggle="pill" href="#pills-android" role="tab" aria-controls="pills-android" aria-selected="false">Android</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-other" aria-selected="false">Other Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-security-tab" data-toggle="pill" href="#pills-security" role="tab" aria-controls="pills-security" aria-selected="false">Security Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="logobox">
-          <a href="https://github.com/solisjose46"
-            ><img alt="GitHub logo" src="github-logo.png" class="logos"
-          /></a>
+      </div>
+      <!--------------Navbar-------------->
+      <!--------------Body-------------->
+      <div class="row bg-dark">
+        <div class="col tab-content" id="pills-tabContent">
+          <!--------------About-------------->
+          <div class="row tab-pane fade show active text-light" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+            <div class="col">
+              <img class="img-fluid float-right rounded w-50" alt="Jose" src="jose_linkedin.jpg"/>
+              <p>Hello, visitor and welcome to my portfolio! This website serves as an example of my front-end skills and point of contact. This website was made with HTML, CSS and vanilla Javascript, but I am familiar with various libraries and frameworks.</p>
+              <p>Currently, I am a Junior Computer Science student at the University of California, Santa Cruz and a Security Researcher at Synack. My interests include building applications and finding flaws (vulnerabilities) in systems and applications.</p>
+              <p>I am interested in a career in software engineering and cybersecurity. I am always seeking opportunities to improve my skills in these fields. For example, I completed an Android Development course offered by Codepath.org, and I have built several Android Mobile Applications. More recently, I earned several GIAC certifications through the SANS VetSuccess Academy. Alongside schoolwork and bug hunting, I am sharpening my security skills via HackTheBox or TryHackMe, and I am currently building an ecommerce webiste based on React, CommercialJS, Stripe and Bootstrap. Please feel free to contact me about any opportunities.</p>
+            </div>
+          </div>
+          <!--------------About-------------->
+          <!--------------Android-------------->
+          <div class="row tab-pane fade" id="pills-android" role="tabpanel" aria-labelledby="pills-android-tab">
+            <div class="col">
+              <div class="row text-light"><div class="col"> <h5><strong>Android</strong></h5> </div></div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-columns px-5">
+                    <div class="card bg-warning border border-dark">
+                      <img class="card-img-top" src="flixster_2_walkthrough.gif" alt="flixster gif">
+                      <div class="card-body">
+                        <h5 class="card-title"> <strong>flixster</strong>  </h5>
+                        <p class="card-text">Movie going app. Learned how to fetch data via APIs and familiarized with JSON</p>
+                        <a href="https://github.com/solisjose46/Flixster" target="_blank" rel="noreferrer noopener" class="btn btn-primary">See Github</a>
+                      </div>
+                    </div>
+                    <div class="card bg-warning border border-dark">
+                      <img class="card-img-top" src="SimpleTweet_walkthrough.gif" alt="SimpleTweet">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>SimpleTweet</strong></h5>
+                        <p class="card-text">Created app to implement twitter like features, such as authenticatng logins. More API practice.</p>
+                        <a href="https://github.com/solisjose46/SimpleTweet" target="_blank" rel="noreferrer noopener" class="btn btn-primary">See Github</a>
+                      </div>
+                    </div>
+                    <div class="card bg-warning border border-dark">
+                      <img class="card-img-top" src="walkthrough2_ParseInsta.gif" alt="ParseInstagram">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>ParseInstagram</strong></h5>
+                        <p class="card-text">Managed database for storing information. Instagram clone, able to login and upload/delete an image. More API practice.</p>
+                        <a href="https://github.com/solisjose46/ParseInstagram" target="_blank" rel="noreferrer noopener" class="btn btn-primary">See Github</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------Android-------------->
+          <!--------------Other-------------->
+          <div class="row tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
+            <div class="col">
+              <div class="row text-light"><div class="col"><h5><strong>Other</strong></h5> </div></div>
+              <div class="row">
+                <div class="col">
+                  <div class="px-5 card-group">
+                    <div class="card bg-warning border border-secondary">
+                      <div class="card-body">
+                        <h5 class="card-title">Python web scraping scripts</script></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+                        <p class="card-text">Python web scraping scripts used recently in my ecommerce site.</p>
+                        <a href="https://github.com/solisjose46/myscripts/blob/main/README.md" class="card-link" target="_blank" rel="noreferrer noopener">Check it out on GitHub</a>
+                      </div>
+                    </div>
+                    <div class="card bg-warning border border-secondary" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">C++ homework</script></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">C++</h6>
+                        <p class="card-text">The majority of my coursework at Foothill College was written in C++.</p>
+                        <a href="https://github.com/solisjose46/Software_Design_and_Algorithms/blob/master/README.md" class="card-link" target="_blank" rel="noreferrer noopener">Check it out on GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------Other-------------->
+          <!--------------Security-------------->
+          <div class="row tab-pane fade" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab">
+            <div class="col">
+              <div class="row text-light"><div class="col"><h5><strong>Security Certifications</strong></h5></div></div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-group">
+                    <div class="card bg-warning border border-secondary">
+                      <div data-iframe-width="" data-iframe-height="270" data-share-badge-id="38adaacb-d202-40ea-9e4d-940d93533f03" data-share-badge-host="https://www.credly.com"></div>
+                    </div>
+                    <div class="card bg-warning border border-secondary">
+                      <div data-iframe-width="" data-iframe-height="270" data-share-badge-id="3c0510c9-342d-4ac6-9b58-24e1d87a4aa5" data-share-badge-host="https://www.credly.com"></div>
+                    </div>
+                    <div class="card bg-warning border border-secondary">
+                      <div data-iframe-width="" data-iframe-height="270" data-share-badge-id="4d29654b-1eb7-4c3c-86ce-00872395d7c1" data-share-badge-host="https://www.credly.com"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------Security-------------->
+          <!--------------Contact-------------->
+          <div class="row tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="col">
+              <div class="row text-light"><div class="col"><h5><strong>Contact</strong></h5></div></div>
+              <div class="row mx-auto" style="width: 160px;">
+                <div class="col card-group">
+                  <div class="card"><a href="https://www.linkedin.com/in/jose-solis-1a2643a5/" target="_blank" rel="noreferrer noopener"><img src="linkedin.png" alt="linkedin"></a></div>
+                  <div class="card"><a href="https://github.com/solisjose46" target="_blank" rel="noreferrer noopener"><img src="github-logo.png" alt="GutHub"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------Contact-------------->
         </div>
       </div>
+      <!--------------Body-------------->
     </div>
-    <script src="index.js"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" async src="embed.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
